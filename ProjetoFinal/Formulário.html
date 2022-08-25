@@ -74,28 +74,27 @@
                 <legend><b>Dados Cadastrais</b></legend>
                 <br>
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">Nome Completo</label>
-                        <input class="inputUser" type="text" name="nome" id="nome" required>
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome Completo</label>
                 </div>
-                    <br>
+                    <br><br>
                 <div class="inputBox">
+                    <input type="text" name="apelido" id="apelido" class="inputUser" required>
                     <label for="apelido" class="labelInput">Apelido (Se houver)</label>
-                    <input class="inputUser" type="text" name="apelido" id="apelido" required>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
-                    <label>CPF:</label>
-                    <input class="inputUser" type="number" name="cpf" id="cpf" required> 
-                    <br>  
+                    <label for="cpf" class="labelInput">CPF:</label>
+                    <input type="number" name="cpf" id="cpf" class="inputUser" required> 
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
-                    <label>Data de Nascimento:</label>
-                    <input class="inputUser" type="date" name="data_nascimento" id="data_nascimento" required />
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required />
                 </div>
-                <br>
+                <br><br><br>
                 <div class="inputBox">
-                            <label>Estado Civil</label>
+                            <label for="estado_civil">Estado Civil</label>
                             <select class="inputUser"  type="select" name="estado_civil" id="estado_civil" required>
                                 <option value="Selecione">Selecione</option> 
                                 <option value="Solteiro">Solteiro(a)</option>
@@ -104,41 +103,43 @@
                                 <option value="Viúvo">Viúvo(a)</option>
                             </select>
                 </div>
-                <br>
-                <div class="inputBox">
-                        <label>Sexo</label><br>
-                        <input class="inputUser" type="radio" name="Masculino" value="Opção 1" />Masculino <br>
-                        <input type="radio" name="Feminino" value="Opção 2" />Feminino <br>
+                <br><br>
+                <div>
+                    <p>Sexo: </p>
+                        <label for="masculino">Masculino</label>
+                        <input class="inputUser" type="radio" name="sexo" id="masculino" value="masculino" required />
+                        <label for="masculino">Feminino</label>
+                        <input class="inputUser" type="radio" name="sexo" id="feminino" value="feminino" required />
                 </div> 
-                <br>
+                <br><br>
                 <div class="inputBox">
                             <label for="whatsapp" class="labelInput">Contato 1 (WhatsApp)</label>
                             <input class="inputUser" type="tel" name="whatsApp" id="whatsapp" required>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <label for="contato" class="labelInput">Contato 2</label>
                         <input class="inputUser" type="tel" name="contato" id="contato" required>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <label for="email" class="labelInput">E-mail</label>
                         <input class="inputUser" type="email" name="email" id="email" required> 
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <label for="endereço" class="labelInput">Endereço</label>
                         <input class="inputUser" type="text" name="endereço" id="endereço"  placeholder="Rua/Av/Lorgadouro, Nº, Bairro" required>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <label for="cidade" class="labelInput">Cidade</label>
                         <input class="inputUser" type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
-                    <label>Estado</label>
-                        <select class="inputUser" type="select" name="estado" id="estado" required>
+                    <label for="estado" class="labelInput" >Estado</label>
+                        <select type="select" name="estado" id="estado" required>
                                 <option value="Selecione"></option>
                                 <option value="Acre">Acre</option>
                                 <option value="Alagoas">Alagoas</option>
@@ -172,11 +173,11 @@
                 <br>
                 <div class="inputBox">
                     <label for="referencia" class="labelInput">Ponto de Referência</label>
-                        <textarea class="inputUser" type="text" name="referencia" id="referencia" rows="5"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" required></textarea>
+                        <textarea type="text" name="referencia" id="referencia" rows="5"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" required></textarea>
                 </div>
                 <div class="inputBox">
                     <label for="observacao" class="labelInput"> Observações </label>
-                        <textarea class="inputUser" name="observacao" type="text" id="observacao" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" required></textarea>
+                        <textarea name="observacao" type="text" id="observacao" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" required></textarea>
                 </div>
                 <br>
                 <hr>
