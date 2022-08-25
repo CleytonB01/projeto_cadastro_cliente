@@ -14,7 +14,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 50px;
+            padding: 15px;
             border-radius: 15px;
             width: 20%;
        }
@@ -58,61 +58,26 @@
                 <legend><b>Dados Cadastrais</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome">Nome Completo</label>
+                    <div class="col-md-5">
+                        <input cclass="inputUser" type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
+                        <label>Nome Completo:</label>
+                    </div>
+                <div class="col-md-3">
+                    <input class="inputUser" type="text" name="apelido" id="apelido" placeholder="Como os vizinhos te conhecem" required>
+                    <label>Apelido (Se houver):</label>
                 </div>
-                <br><br>
+                <div class="col-sm-2">
+                    <input class="inputUser" type="number" name="cpf" id="cpf" required> 
+                    <label>CPF:</label>
+                    <br>  
+                </div>
+                <br>
                 <div class="inputBox">
-                    <input type="email" name="email" id="email" class="inputUser" required>
-                    <label for="email">E-mail</label>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label>Data de Nascimento:</label>
+                            <input class="input-group" type="date" name="Nascimento" required />
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="apelido" id="apelido" class="inputUser" required>
-                    <label for="apelido">Apelido</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="number" name="cpf" id="cpf" class="inputUser" required>
-                    <label for="cpf">CPF</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="date" name="data" id="data" class="inputUser" required>
-                    <label for="data">Data Nascimento</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <label for="estado civil">Estado Civil</label>
-                    <select class="inputUser" name="estado civil" id="estado civil" required>
-                        <option value="Selecione">Selecione</option> <option value="Solteiro">Solteiro(a)</option>
-                        <option value="Casado">Casado(a)</option>
-                        <option value="Divorciado">Divorciado(a)</option>
-                        <option value="Viúvo">Viúvo(a)</option>
-                    </select>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="apelido" id="apelido" class="inputUser" required>
-                    <label for="apelido">Apelido</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="number" name="cpf" id="cpf" class="inputUser" required>
-                    <label for="cpf">CPF</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="date" name="data" id="data" class="inputUser" required>
-                    <label for="data">Data Nascimento</label>
-                </div>
-                <br><br>
-            </fieldset>
-        </form>
-        
-    <!--<form>
-            
-        
                 <div class="col-md-5">
                     <label>Estado Civil:</label>
                         <select class="input-group" name="Estado Civil" required>
@@ -227,6 +192,7 @@
             <a href="pedidos.html"><button type="button" class="btn btn-success"> Realizar Pedido </button></a>
         </div>    
            <hr>
-    </form>-->
+        </fieldset>
+    </form>
 </body>
 </html>
