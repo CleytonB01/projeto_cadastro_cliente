@@ -35,7 +35,8 @@
             font-weight: 500;
         }
         body {
-            background-color: rgb(240, 187, 167);
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(210,105,30), rgb (244,164,96));
         }
         
     </style>
@@ -51,28 +52,31 @@
                         <input cclass="inputUser" type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
                         <label>Nome Completo:</label>
                     </div>
+                    <br>
                 <div class="col-md-3">
                     <input class="inputUser" type="text" name="apelido" id="apelido" placeholder="Como os vizinhos te conhecem" required>
                     <label>Apelido (Se houver):</label>
                 </div>
+                <br>
                 <div class="col-sm-2">
-                    <input class="inputUser" type="number" name="cpf" id="cpf" required> 
                     <label>CPF:</label>
+                    <input class="inputUser" type="number" name="cpf" id="cpf" required> 
                     <br>  
                 </div>
                 <br>
                 <div class="inputBox">
                     <div class="row">
                         <div class="col-md-3">
-                            <input class="inputUser" type="date" name="Nascimento" id="nascimento" required />
-                            <label>Data de Nascimento</label>
+                            <label>Data de Nascimento:</label>
+                            <input class="inputUser" type="date" name="data_nascimento" id="data_nascimento" required />
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="inputBox">
                     <div class="col-md-4">
                             <label>Estado Civil</label>
-                            <select class="inputUser"  type="select" name="Estado Civil" id="civil" required>
+                            <select class="inputUser"  type="select" name="estado_civil" id="estado_civil" required>
                                 <option value="Selecione">Selecione</option> 
                                 <option value="Solteiro">Solteiro(a)</option>
                                 <option value="Casado">Casado(a)</option>
@@ -81,6 +85,7 @@
                             </select>
                     </div>
                 </div>
+                <br>
                 <div class="inputBox">
                     <div class="col-md-3">
                         <label>Sexo</label><br>
@@ -88,106 +93,103 @@
                         <input type="radio" name="Feminino" value="Opção 2" />Feminino <br>
                     </div>
                 </div>
-        </div> <br>
-        <div class="inputBox">
-            <div class="row">
-                <div class="col-md-3">
-                    <input class="inputUser" type="tel" name="whatsApp" id="whatsapp" placeholder="(XX) 9.1234-5678" required>
-                    <label>Contato 1 (WhatsApp)</label>
+                </div> <br>
+                <div class="inputBox">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <input class="inputUser" type="tel" name="whatsApp" id="whatsapp" placeholder="(XX) 9.1234-5678" required>
+                            <label>Contato 1 (WhatsApp)</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="inputUser" type="tel" name="contato" id="contato" placeholder="(XX) 9.1234-5678">
+                            <label>Contato 2</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="inputUser" type="email" name="email" id="email" placeholder="meuemail@qualquermail.com" required> 
+                            <label>E-mail</label><br>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <input class="inputUser" type="tel" name="Telefone" id="contato" placeholder="(XX) 9.1234-5678">
-                    <label>Contato 2</label>
-                </div>
-                <div class="col-md-6">
-                    <input class="inputUser" type="email" name="email" id="email" placeholder="meuemail@qualquermail.com" required> 
-                    <label>E-mail</label><br>
-                </div>
-            </div>
-        </div>
-        <div class="inputBox">
-            <div class="row">
-                <div class="col-md-6">
-                    <input class="inputUser" type="text" name="endereço" id="endereço"  placeholder="Rua/Av/Lorgadouro, Nº, Bairro" required>
-                    <label>Endereço</label>
-                </div>
-                <div class="col-md-2">
-                    <input class="inputUser" type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required>
-                    <label>Cidade</label>
-                </div>
-                <div class="col-md-2">
-                    <label>Estado</label>
-                    <select class="inputUser" type="select" name="Estado" id="estado" required>
-                        <option value="Selecione"></option>
-                        <option value="Acre">Acre</option>
-                        <option value="Alagoas">Alagoas</option>
-                        <option value="Amapá">Amapá</option>
-                        <option value="Amazonas">Amazonas</option>
-                        <option value="Bahia">Bahia</option>
-                        <option value="Ceará">Ceará</option>
-                        <option value="Distrito Federal">Distrito Federal</option>
-                        <option value=" Espírito Santo	">  Espírito Santo	</option>
-                        <option value="Goiás">Goiás</option>
-                        <option value="Maranhão">Maranhão</option>
-                        <option value="Mato Grosso">Mato Grosso</option>
-                        <option value="Mato Grosso	do Sul">  Mato Grosso do Sul</option>
-                        <option value="Minas Gerais">Minas Gerais</option>
-                        <option value="Pará"> Pará</option>
-                        <option value="Paraíba "> Paraíba</option>
-                        <option value="Paraná"> Paraná</option>
-                        <option value="Pernambuco"> Pernambuco</option>
-                        <option value="Piauí"> Piauí</option>
-                        <option value=" Rio de Janeiro">  Rio de Janeiro</option>
-                        <option value=" Rio Grande do Norte">  Rio Grande do Norte</option>
-                        <option value=" Rio Grande do Sul">  Rio Grande do Sul</option>
-                        <option value="Rondônia"> Rondônia</option>
-                        <option value="Roraima"> Roraima</option>
-                        <option value=" Santa Catarina 	">  Santa Catarina</option>
-                        <option value="São Paulo"> São Paulo</option>
-                        <option value="Sergipe"> Sergipe</option>
-                        <option value="Tocantins"> Tocantins</option>
-                    </select>
-                </div>
-        </div><br>
-        <div class="inputBox">
-            <div class="row">
-                <div class="col-md-5">
-                    <label>Ponto de Referência</label>
-                    <textarea class="inputUser" type="text" name="referencia" id="referencia" rows="5"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" required></textarea>
-                </div>
-            </div>
-                <div class="col-md-5">
-                    <label> Observações</label>
-                    <textarea class="inputUser" name="observacao" type="text" id="observacao" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" required></textarea>
+                <div class="inputBox">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="inputUser" type="text" name="endereço" id="endereço"  placeholder="Rua/Av/Lorgadouro, Nº, Bairro" required>
+                            <label>Endereço</label>
+                        </div>
+                        <div class="col-md-2">
+                            <input class="inputUser" type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required>
+                            <label>Cidade</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>Estado</label>
+                            <select class="inputUser" type="select" name="estado" id="estado" required>
+                                <option value="Selecione"></option>
+                                <option value="Acre">Acre</option>
+                                <option value="Alagoas">Alagoas</option>
+                                <option value="Amapá">Amapá</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Bahia">Bahia</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Distrito Federal">Distrito Federal</option>
+                                <option value=" Espírito Santo	">  Espírito Santo	</option>
+                                <option value="Goiás">Goiás</option>
+                                <option value="Maranhão">Maranhão</option>
+                                <option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Mato Grosso	do Sul">  Mato Grosso do Sul</option>
+                                <option value="Minas Gerais">Minas Gerais</option>
+                                <option value="Pará"> Pará</option>
+                                <option value="Paraíba "> Paraíba</option>
+                                <option value="Paraná"> Paraná</option>
+                                <option value="Pernambuco"> Pernambuco</option>
+                                <option value="Piauí"> Piauí</option>
+                                <option value=" Rio de Janeiro">  Rio de Janeiro</option>
+                                <option value=" Rio Grande do Norte">  Rio Grande do Norte</option>
+                                <option value=" Rio Grande do Sul">  Rio Grande do Sul</option>
+                                <option value="Rondônia"> Rondônia</option>
+                                <option value="Roraima"> Roraima</option>
+                                <option value=" Santa Catarina 	">  Santa Catarina</option>
+                                <option value="São Paulo"> São Paulo</option>
+                                <option value="Sergipe"> Sergipe</option>
+                                <option value="Tocantins"> Tocantins</option>
+                            </select>
+                        </div>
                 </div><br>
-                
+                <div class="inputBox">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label>Ponto de Referência</label>
+                            <textarea class="inputUser" type="text" name="referencia" id="referencia" rows="5"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" required></textarea>
+                        </div>
+                    </div>
+                        <div class="col-md-5">
+                            <label> Observações</label>
+                            <textarea class="inputUser" name="observacao" type="text" id="observacao" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" required></textarea>
+                        </div><br>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="inputBox">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                        <label class="form-check-label" for="flexSwitchCheckDefault"> Desejo receber novidades, promoções e informações pelo WhatsApp.</label>
+                    </div>
+                    <br>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                    <label class="form-check-label" for="flexSwitchCheckDefault"> Desejo receber novidades, promoções e informações pelo E-mail.</label>
+                </div>  <br>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                    <label class="form-check-label" for="flexSwitchCheckDefault"> Aceito os Termos e Condições.</label>
+                </div> <br>
             </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
-                <label class="form-check-label" for="flexSwitchCheckDefault"> Desejo receber novidades, promoções e informações pelo WhatsApp.</label>
-            </div>
-         <br>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
-                <label class="form-check-label" for="flexSwitchCheckDefault"> Desejo receber novidades, promoções e informações pelo E-mail.</label>
-            </div>  <br>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
-                <label class="form-check-label" for="flexSwitchCheckDefault"> Aceito os Termos e Condições.</label>
-            </div> <br>
-        </div>
-
-       
-        <hr><br>
-              
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-            <a href="index.html"><button  type="button" class="btn btn-outline-secondary"> Voltar </button></a> 
-            <a href="pedidos.html"><button type="button" class="btn btn-outline-warning"> Realizar Pedido </button></a>
-        </div>    
-           <hr>
+            <hr><br>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <a href="index.html"><button  type="button" class="btn btn-outline-secondary"> Voltar </button></a> 
+                    <a href="pedidos.html"><button type="button" class="btn btn-outline-warning"> Realizar Pedido </button></a>
+                </div>    
+            <hr>
         </fieldset>
     </form>
 </body>
