@@ -14,7 +14,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 15px;
+            padding: 50px;
             border-radius: 15px;
             width: 20%;
        }
@@ -78,41 +78,41 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome">Nome Completo</label>
+                    <input type="date" name="data" id="data" class="inputUser" required>
+                    <label for="data">Data Nascimento</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="email" name="email" id="email" class="inputUser" required>
-                    <label for="email">E-mail</label>
+                    <label for="estado civil">Estado Civil</label>
+                    <select class="inputUser" name="estado civil" id="estado civil" required>
+                        <option value="Selecione">Selecione</option> <option value="Solteiro">Solteiro(a)</option>
+                        <option value="Casado">Casado(a)</option>
+                        <option value="Divorciado">Divorciado(a)</option>
+                        <option value="Viúvo">Viúvo(a)</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="apelido" id="apelido" class="inputUser" required>
+                    <label for="apelido">Apelido</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="number" name="cpf" id="cpf" class="inputUser" required>
+                    <label for="cpf">CPF</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="date" name="data" id="data" class="inputUser" required>
+                    <label for="data">Data Nascimento</label>
                 </div>
                 <br><br>
             </fieldset>
         </form>
         
     <!--<form>
-            <div class="row">
-                <div class="col-md-5">
-                    <label>Nome Completo:</label>
-                    <input class="input-group" type="text" name="nome" id="tamanho"  placeholder="Nome Completo" required>
-                </div>
-                <div class="col-md-3">
-                    <label>Apelido (Se houver):</label>
-                    <input class="input-group" type="text" name="nome" id="tamanho" placeholder="Como os vizinhos te conhecem" required>
-                </div>
-                <div class="col-sm-2">
-                    <label>CPF:</label>
-                    <input class="input-group" type="number" name="cpf"  placeholder="000.000.000-00" required> <br>  
-                </div>
-                
-            </div>    
-        </div><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <label>Data de Nascimento:</label>
-                    <input class="input-group" type="date" name="Nascimento" required />
-                </div>
+            
+        
                 <div class="col-md-5">
                     <label>Estado Civil:</label>
                         <select class="input-group" name="Estado Civil" required>
