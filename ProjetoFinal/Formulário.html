@@ -75,54 +75,60 @@
                 <div class="inputBox">
                     <div class="row">
                         <div class="col-md-3">
-                            <label>Data de Nascimento:</label>
-                            <input class="input-group" type="date" name="Nascimento" required />
+                            <input class="inputUser" type="date" name="Nascimento" id="nascimento" required />
+                            <label>Data de Nascimento</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <label>Estado Civil:</label>
-                        <select class="input-group" name="Estado Civil" required>
-                            <option value="Selecione">Selecione</option> <option value="Solteiro">Solteiro(a)</option>
-                            <option value="Casado">Casado(a)</option>
-                            <option value="Divorciado">Divorciado(a)</option>
-                            <option value="Viúvo">Viúvo(a)</option>
-                        </select>
-                </div>
+                <div class="inputBox">
                     <div class="col-md-4">
-                        <label>Sexo:</label><br>
-                        <input type="radio" name="Masculino" value="Opção 1" />Masculino <br>
+                            <label>Estado Civil</label>
+                            <select class="inputUser"  type="select" name="Estado Civil" id="civil" required>
+                                <option value="Selecione">Selecione</option> 
+                                <option value="Solteiro">Solteiro(a)</option>
+                                <option value="Casado">Casado(a)</option>
+                                <option value="Divorciado">Divorciado(a)</option>
+                                <option value="Viúvo">Viúvo(a)</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="col-md-3">
+                        <label>Sexo</label><br>
+                        <input class="inputUser" type="radio" name="Masculino" value="Opção 1" />Masculino <br>
                         <input type="radio" name="Feminino" value="Opção 2" />Feminino <br>
                     </div>
-                 </div>
+                </div>
         </div> <br>
-        <div class="container">
+        <div class="inputBox">
             <div class="row">
                 <div class="col-md-3">
-                    <label>Contato 1 (WhatsApp):</label>
-                    <input class="input-group" type="tel" name="WhatsApp"  placeholder="(XX) 9.1234-5678" required>
+                    <input class="inputUser" type="tel" name="whatsApp" id="whatsapp" placeholder="(XX) 9.1234-5678" required>
+                    <label>Contato 1 (WhatsApp)</label>
                 </div>
                 <div class="col-md-3">
-                    <label>Contato 2:</label>
-                    <input class="input-group" type="tel" name="Telefone"  placeholder="(XX) 9.1234-5678">
+                    <input class="inputUser" type="tel" name="Telefone" id="contato" placeholder="(XX) 9.1234-5678">
+                    <label>Contato 2</label>
                 </div>
                 <div class="col-md-6">
-                    <label>E-mail:</label>
-                    <input class="input-group" type="email" name="E-mail"  placeholder="meuemail@qualquermail.com" required> <br>
+                    <input class="inputUser" type="email" name="email" id="email" placeholder="meuemail@qualquermail.com" required> 
+                    <label>E-mail</label><br>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="inputBox">
             <div class="row">
-                <div class="col-md-5">
-                    <label>Endereço:</label>
-                    <input class="input-group" type="text" name="Telefone"  placeholder="Rua/Av/Lorgadouro, Nº, Bairro" required>
+                <div class="col-md-6">
+                    <input class="inputUser" type="text" name="endereço" id="endereço"  placeholder="Rua/Av/Lorgadouro, Nº, Bairro" required>
+                    <label>Endereço</label>
                 </div>
                 <div class="col-md-2">
-                    <label>Cidade:</label>
-                    <input class="input-group" type="text" name="cidade"  placeholder="Sua Cidade" required>
+                    <input class="inputUser" type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required>
+                    <label>Cidade</label>
                 </div>
                 <div class="col-md-2">
-                    <label>Estado:</label>
-                    <select name="Estado" required>
+                    <label>Estado</label>
+                    <select class="inputUser" type="select" name="Estado" id="estado" required>
                         <option value="Selecione"></option>
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>
@@ -153,18 +159,19 @@
                         <option value="Tocantins"> Tocantins</option>
                     </select>
                 </div>
-                <div class="col-md-3">
+        </div><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
                     <label>Ponto de Referência:</label>
                     <textarea class="input-group" name="ponto de Referência"; rows="5"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" required></textarea>
                 </div>
             </div>
-        </div><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-5">
                     <label> Observações:</label>
                     <textarea class="input-group" name="Observacoes" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" required></textarea>
                 </div><br>
+                
             </div>
         </div>
         <hr>
