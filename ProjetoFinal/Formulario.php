@@ -185,7 +185,7 @@
                     <div class="inputBox mb-5">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <a href="index.html"><button  type="button" class="btn btn-outline-secondary"> Voltar </button></a>
-                            <a href="pedidos.html"><input type="submit" class="btn btn-primary"></a>
+                            <a href="pedidos.html"><input type="submit" name="submit" id="submit" class="btn btn-primary"></a>
                         </div>
                     </div>
 
