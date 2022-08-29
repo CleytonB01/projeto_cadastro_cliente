@@ -2,17 +2,24 @@
 
     if (isset($_POST['submit']))
      {
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
-        print_r($_POST['nome']);
+        include_once('config.php')
+
+        $nome = $_POST['nome'];
+        $apelido = $_POST['apelido'];
+        $contato1 = $_POST['contato1'];
+        $contato2 = $_POST['contato2'];
+        $email = $_POST['email'];
+        $cpf = $_POST['cpf'];
+        $data_nasc = $_POST['data_nasc'];
+        $est_civ = $_POST['est_civ'];
+        $sexo = $_POST['sexo'];
+        $endereco = $_POST['endereço'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $ponto_ref = $_POST['ponto_ref'];
+        $obs = $_POST['obs'];
+
+        $result = mysqli_query($conexao, "INSERT INTO formulario(nome,apelido,contato1,contato2,email,cpf,data_nasc,est_civ,sexo,endereço,cidade,estado,ponto_ref,obs) VALUES($nome,$apelido,$contato1, $contato2,$email,$cpf,$data_nasc,$est_civ,$sexo,$endereco,$cidade,$estado,$ponto_ref,$obs)");
     }
  ?>
  <!DOCTYPE html>
@@ -74,12 +81,12 @@
                     <div class="row pb-2">
                         <div class="col-sd-12 col-md-4">
                             <label for="whatsapp" class="form-label">Contato 1 (WhatsApp)</label>
-                            <input class="form-control" type="tel" name="whatsapp" id="whatsapp" required>
+                            <input class="form-control" type="tel" name="contato1" id="contato1" required>
                         </div>
                     
                         <div class="col-sd-12 col-md-4">
                             <label for="contato" class="form-label">Contato 2</label>
-                            <input class="form-control" type="tel" name="contato" id="contato" required>
+                            <input class="form-control" type="tel" name="contato2" id="contato2" required>
                         </div>
                         <div class="col-sd-12 col-md-4">
                             <label for="email" class="form-label">E-mail</label>
@@ -165,7 +172,7 @@
                     <div class="row">
                         <div class="col-sm-12 pb-2">
                             <label for="ref" class="form-label">Ponto de Referência</label>
-                            <textarea type="text" name="ref" id="ref" rows="2"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" class="form-control" required></textarea>
+                            <textarea type="text" name="ponto_ref" id="ponto_ref" rows="2"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" class="form-control" required></textarea>
                         </div>
                     </div>
 
