@@ -19,7 +19,7 @@
         $ponto_ref = $_POST['ponto_ref'];
         $obs = $_POST['obs'];
 
-        $result = mysqli_query($conexao, "INSERT INTO formulario(nome,apelido,contato1,contato2,email,cpf,data_nasc,est_civ,sexo,endereço,cidade,estado,ponto_ref,obs) VALUES($nome,$apelido,$contato1, $contato2,$email,$cpf,$data_nasc,$est_civ,$sexo,$endereco,$cidade,$estado,$ponto_ref,$obs)");
+        $result = mysqli_query($conexao, "INSERT INTO formulario(nome,apelido,contato1,contato2,email,cpf,data_nasc,est_civ,sexo,endereço,cidade,estado,ponto_ref,obs) VALUES('$nome','$apelido','$contato1', '$contato2','$email','$cpf','$data_nasc','$est_civ','$sexo','$endereco','$cidade','$estado','$ponto_ref','$obs')");
     }
  ?>
 <!DOCTYPE html>
