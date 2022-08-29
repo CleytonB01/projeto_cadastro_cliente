@@ -11,6 +11,9 @@
      {
         echo "Erro";
     }
+    else {
+        echo "Conexão estabelecida!";
+    }
 
 
 ?>
