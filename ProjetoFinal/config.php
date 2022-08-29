@@ -5,7 +5,12 @@
     $dbPassword =   '';
     $dbName = 'camila_db';
 
-    $conexao = new mysquli($dbHost,$dbUsername,$dbPassword,$dbName)
+    $conexao = new mysquli($dbHost,$dbUsername,$dbPassword,$dbName);
+
+    if ($conexao->connect_erro)
+     {
+        echo "Erro";
+    }
 
 
 ?>
