@@ -1,3 +1,20 @@
+ <?php
+
+    if (isset($_POST['submit']))
+     {
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+        print_r($_POST['nome']);
+    }
+ ?>
  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -39,7 +56,7 @@
 </head>
 <body>
         <div class="container">
-            <form action="">
+            <form action="Formulario.php" method="POST">
                 <fieldset class="m-2 p-4">
                     <legend><b>Dados Cadastrais</b></legend>
                     <br>
@@ -57,7 +74,7 @@
                     <div class="row pb-2">
                         <div class="col-sd-12 col-md-4">
                             <label for="whatsapp" class="form-label">Contato 1 (WhatsApp)</label>
-                            <input class="form-control" type="tel" name="whatsApp" id="whatsapp" required>
+                            <input class="form-control" type="tel" name="whatsapp" id="whatsapp" required>
                         </div>
                     
                         <div class="col-sd-12 col-md-4">
@@ -77,12 +94,12 @@
                             <input type="number" name="cpf" id="cpf" required class="form-control">
                         </div>
                         <div class="col-md-6">
-                            <label for="data_nascimento" class="form-label">Data de Nascimento:</label>
-                            <input type="date" name="data_nascimento" id="data_nascimento" required class="form-control" />
+                            <label for="data_nasc" class="form-label">Data de Nascimento:</label>
+                            <input type="date" name="data_nasc" id="data_nasc" required class="form-control" />
                         </div>
                         <div class="col-sd-12 col-md-6">
-                            <label for="estado_civil" class="form-label"> Estado Civil:</label>
-                                <select type="select" name="estado_civil" id="estado_civil" required class="form-select">
+                            <label for="est_civ" class="form-label"> Estado Civil:</label>
+                                <select type="select" name="est_civ" id="est_civ" required class="form-select">
                                         <option value="Selecione">Selecione</option>
                                         <option value="Solteiro">Solteiro(a)</option>
                                         <option value="Casado">Casado(a)</option>
@@ -147,15 +164,15 @@
 
                     <div class="row">
                         <div class="col-sm-12 pb-2">
-                            <label for="referencia" class="form-label">Ponto de Referência</label>
-                            <textarea type="text" name="referencia" id="referencia" rows="2"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" class="form-control" required></textarea>
+                            <label for="ref" class="form-label">Ponto de Referência</label>
+                            <textarea type="text" name="ref" id="ref" rows="2"  placeholder="Por favor, informe um ou mais pontos de referência próximos ao local de entrega!" class="form-control" required></textarea>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-12 pb-2">
-                            <label for="observacao" class="labelInput"> Observações </label>
-                            <textarea name="observacao" type="text" id="observacao" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" class="form-control" required></textarea>
+                            <label for="obs" class="labelInput"> Observações </label>
+                            <textarea name="obs" type="text" id="obs" rows="5"  placeholder="Escreva quaisquer observações necessárias para facilitar a entrega do seu pedido!" class="form-control" required></textarea>
                         </div>
                     </div>
 
