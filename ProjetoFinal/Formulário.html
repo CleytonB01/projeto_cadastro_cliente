@@ -10,6 +10,17 @@
         font-family: Arial, Helvetica, sans-serif;
         background-color:  rgb(244,164,96);
     }
+    .container {
+        color: bisque;
+        position: absolute;
+        top: auto;
+        left: auto;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 15px;
+        width: 20%;
+    }
     fieldset{
         border: 3px solid darkgoldenrod;
     }
@@ -19,6 +30,32 @@
         text-align: center;
         background-color: darkgoldenrod;
         border-radius: 8px;
+    }
+    .inputBox{
+        position: relative;
+    }
+    .form-label{
+        background: none;
+        border: none;
+        border-bottom: 1px solid darkgoldenrod;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: auto;
+        letter-spacing: 2px;
+    }
+    .form-control{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .form-label:focus ~ .form-control,
+    .form-label:valid ~ .form-control{
+        top: -20px;
+        font-size: 12px;
+        color: darkgoldenrod;
     }
     #data_nascimento{
         border: none;
