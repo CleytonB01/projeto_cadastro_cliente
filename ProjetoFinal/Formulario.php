@@ -22,7 +22,7 @@
         $result = mysqli_query($conexao, "INSERT INTO formulario(nome,apelido,contato1,contato2,email,cpf,data_nasc,est_civ,sexo,endereço,cidade,estado,ponto_ref,obs) VALUES($nome,$apelido,$contato1, $contato2,$email,$cpf,$data_nasc,$est_civ,$sexo,$endereco,$cidade,$estado,$ponto_ref,$obs)");
     }
  ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
