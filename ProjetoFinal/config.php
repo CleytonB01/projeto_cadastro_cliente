@@ -14,6 +14,4 @@
    // else {
    //     echo "Conexão estabelecida!";
    // }
-
-
 ?>
