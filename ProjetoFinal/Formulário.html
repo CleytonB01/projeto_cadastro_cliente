@@ -31,10 +31,7 @@
         background-color: darkgoldenrod;
         border-radius: 8px;
     }
-    .inputBox{
-        position: relative;
-    }
-    .form-label{
+    .form-control{
         background: none;
         border: none;
         border-bottom: 1px solid darkgoldenrod;
@@ -44,15 +41,15 @@
         width: auto;
         letter-spacing: 2px;
     }
-    .form-control{
+    .form-label{
         position: absolute;
         top: 0px;
         left: 0px;
         pointer-events: none;
         transition: .5s;
     }
-    .form-label:focus ~ .form-control,
-    .form-label:valid ~ .form-control{
+    .form-control:focus ~ .form-label,
+    .form-control:valid ~ .form-label{
         top: -20px;
         font-size: 12px;
         color: darkgoldenrod;
